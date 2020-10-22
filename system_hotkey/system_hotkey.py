@@ -283,7 +283,7 @@ class MixIn():
         '''
         assert isinstance(hotkey, collections.Iterable) and type(hotkey) not in (str, bytes)
         if self.consumer == 'callback' and not callback:
-            raise TypeError('Function register requires callback argument in non sonsumer mode')
+            raise TypeError('Function register requires callback argument in non consumer mode')
 
         hotkey = self.order_hotkey(hotkey)
         keycode, masks = self.parse_hotkeylist(hotkey)
